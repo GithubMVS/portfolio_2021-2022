@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from './index.module.css'
 
 export default function Home() {
   return (
@@ -11,7 +11,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-       <p>Test</p>
+        <p className={styles.openingAndClosingTag}>Fullstack developper</p>
+        <h1 className={styles.myFullName}>Matisse Van Steenbergen</h1>
+
+        <nav>
+
+        </nav>
       </main>
     </div>
   )

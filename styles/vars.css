@@ -1,0 +1,12 @@
+:root {
+  /* font weights */
+  --fontWeightLight: 300;
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 600;
+  --fontWeightBold: 700;
+  --fontWeightBlack: 900;
+  /* font colors */
+  --backgroundColor: #16161E;
+  --colorWhite: #FFFFFF;
+  --subColor: #4F3EF5;
+}
