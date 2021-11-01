@@ -2,6 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './index.module.css'
 
+// imports of components
+import Navigation from '../components/navigation/Navigation'
+import Footer from '../components/footer/Footer'
+import Header from '../components/header/Header'
+
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,12 +17,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <p className={styles.openingAndClosingTag}>Fullstack developper</p>
-        <h1 className={styles.myFullName}>Matisse Van Steenbergen</h1>
+        <header>
+          <Navigation />
+          <Header />
+        </header>
 
-        <nav>
-
-        </nav>
+        <Footer />
       </main>
     </div>
   )
