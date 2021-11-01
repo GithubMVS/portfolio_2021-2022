@@ -1,5 +1,4 @@
 .navigationFull {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -28,7 +27,7 @@
 
 @media (max-width: 1680px) {
   .navigationFull {
-    padding: 10rem 12.5rem 0rem 12.5rem;
+    padding: 10rem 15rem 0rem 15rem;
   }
 }
 

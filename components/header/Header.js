@@ -20,9 +20,9 @@ import arrow from '../../public/images/header/scrollArrowHeader.svg'
 
 const Header = () => {
   return (
-    <>
+    <div className={styles.headerFull}>
       <p className={styles.openingAndClosingTag}>Fullstack developper</p>
-      <h1 className={styles.myFullName}>Matisse Van Steenbergen</h1>
+      <h1 className={styles.myFullName}>Matisse <br></br> Van Steenbergen</h1>
       <div className={styles.imageOfMe1920}><Image layout="fixed" alt="pictureOfMe1920" width="810" height="613" src={pictureMe1920} /></div>
       <div className={styles.imageOfMe1680}><Image layout="fixed" alt="pictureOfMe1680" width="650" height="492" src={pictureMe1650} /></div>
       <div className={styles.imageOfMe1440_1280}><Image layout="fixed" alt="pictureOfMe1440_1280" width="601" height="449" src={pictureMe1440_1280} /></div>
@@ -33,11 +33,11 @@ const Header = () => {
       <div className={styles.imageOfMe375}><Image layout="fixed" alt="pictureOfMe375" width="315" height="204" src={pictureMe375} /></div>
       <div className={styles.imageOfMe320} ><Image layout="fixed" alt="pictureOfMe320" width="279" height="181" src={pictureMe320} /></div>
 
-      <div>
-        <p>Scroll to experience</p>
-        <Image className={styles.scrollToExperience} layout="fixed" alt="pictureOfMe1920" src={arrow} />
+      <div className={styles.experience__header_full}>
+        <p className={styles.experience__header_text}>Scroll to experience</p>
+        <div className={styles.scrollToExperience__arrow}><Image className={styles.scrollToExperience} layout="fixed" alt="pictureOfMe1920" src={arrow} /></div>
       </div>
-    </>
+    </div>
   )
 }
 

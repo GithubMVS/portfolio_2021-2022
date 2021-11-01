@@ -4,6 +4,12 @@
   font-family: BelyDisplayW00-Regular;
   font-weight: var(--fontWeightRegular);
   line-height: 16.5rem;
+  z-index: 100;
+  position: relative;
+}
+
+.headerFull {
+  margin: 0rem 15rem;
 }
 
 .openingAndClosingTag {
@@ -11,7 +17,26 @@
   color: white;
   font-weight: var(--fontWeightMedium);
   letter-spacing: .5rem;
-  line-height: 16.5rem;
+  margin-top: 22.5rem;
+}
+
+.openingAndClosingTag::before {
+  content: "<";
+  color: #4F3EF5;
+  margin-right: 1rem;
+}
+
+.openingAndClosingTag::after {
+  content: "/>";
+  color: #4F3EF5;
+  margin-left: 1rem;
+}
+
+.imageOfMe1920, .imageOfMe1680, .imageOfMe1440_1280, .imageOfMe1024 {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 21.5%;
 }
 
 .imageOfMe1680, .imageOfMe1440_1280, .imageOfMe1024, .imageOfMe768, .imageOfMe428, .imageOfMe414, .imageOfMe375, .imageOfMe320 {
@@ -19,12 +44,37 @@
   background-color: #1c1c29;
 }
 
+.experience__header_full {
+  display: flex;
+  align-content: center;
+  margin-top: 12.5rem;
+}
+
+.experience__header_text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: BelyDisplayW00-Regular;
+  font-size: 3.5rem;
+  margin-right: 5rem;
+}
+
 @media (max-width: 1680px) {
   .imageOfMe1920, .imageOfMe1440_1280, .imageOfMe1024, .imageOfMe768, .imageOfMe428, .imageOfMe414, .imageOfMe375, .imageOfMe320 {
     display: none;
   }
   .imageOfMe1680 {
-    display: contents;
+    display: flex;
+  }
+  .openingAndClosingTag {
+    margin-top: 17.5rem;
+  }
+  .experience__header_full {
+    margin-top: 7.5rem;
+  }
+  .imageOfMe1680 {
+    top: 29%;
   }
 }
 
@@ -33,7 +83,13 @@
     display: none;
   }
   .imageOfMe1440_1280 {
-    display: contents;
+    display: flex;
+  }
+  .experience__header_full {
+    margin-top: 20rem;
+  }
+  .imageOfMe1440_1280 {
+    top: 25%;
   }
 }
 
@@ -42,7 +98,24 @@
     display: none;
   }
   .imageOfMe1440_1280 {
-    display: contents;
+    display: flex;
+  }
+  .openingAndClosingTag {
+    margin-top: 12.5rem;
+  }
+  .myFullName {
+    font-size: 10rem;
+    line-height: 12.5rem;
+  }
+  .experience__header_text {
+    font-size: 3rem;
+    margin-right: 3rem;
+  }
+  .imageOfMe1440_1280 {
+    top: 22.5%;
+  }
+  .experience__header_full {
+    margin-top: 12.5rem;
   }
 }
 
@@ -51,7 +124,32 @@
     display: none;
   }
   .imageOfMe1024 {
-    display: contents;
+    display: flex;
+  }
+  .headerFull {
+    margin: 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .imageOfMe1024 {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+  .openingAndClosingTag {
+    margin: 9rem 0rem 1rem 0rem;
+  }
+  .myFullName {
+    margin-bottom: 5.5rem;
+  }
+  .experience__header_full {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience__header_text {
+    margin: 0rem 0rem 2rem 0rem;
   }
 }
 
