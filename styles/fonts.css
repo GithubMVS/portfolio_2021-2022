@@ -43,8 +43,8 @@
 }
 
 @font-face {
-  font-family: 'belySans';
+  font-family: 'BelyDisplayW00-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('belySans'), url('/fonts/belySans') format('woff');
+  src: local('BelyDisplayW00-Regular'), url('/fonts/belySans.woff') format('woff');
 }

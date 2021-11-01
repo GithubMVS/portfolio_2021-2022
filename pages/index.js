@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <header>
+        <header className={styles.header}>
           <Navigation />
           <Header />
         </header>
