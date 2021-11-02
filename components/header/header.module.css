@@ -183,13 +183,34 @@
     margin-bottom: 5.5rem;
   }
   .experience__header_full {
-    margin-top: 5rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100%;
   }
   .experience__header_text {
     margin: 0rem 0rem 2rem 0rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .myFullName {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+}
+
+@media (max-width: 848px) {
+  .myFullName {
+    font-size: 6.5rem;
+    line-height: 8rem;
+  }
+  .openingAndClosingTag {
+    font-size: 2rem;
+    margin: 7.5rem 0rem 1rem 0rem;
+    letter-spacing: .25rem;
   }
 }
 
@@ -198,7 +219,7 @@
     display: none;
   }
   .imageOfMe768 {
-    display: contents;
+    display: flex;
   }
   .headerFull {
     margin: 0rem 7.5rem;
@@ -212,6 +233,18 @@
     font-size: 7.5rem;
     line-height: 10rem;
     margin-bottom: 6.3rem;
+  }
+}
+
+@media (max-width: 754px) {
+  .myFullName {
+    font-size: 5rem;
+    line-height: 7.5rem;
+    margin-bottom: 5rem;
+  }
+  .openingAndClosingTag {
+    font-size: 1.5rem;
+    letter-spacing: .35rem;
   }
 }
 
