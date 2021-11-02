@@ -9,7 +9,7 @@
 .myFullName {
   font-size: 12.5rem;
   color: white;
-  font-family: BelyDisplayW00-Regular;
+  font-family: Bely Display;
   font-weight: var(--fontWeightRegular);
   line-height: 16.5rem;
   z-index: 100;
@@ -21,7 +21,7 @@
   display: none;
   font-size: 12.5rem;
   color: white;
-  font-family: BelyDisplayW00-Regular;
+  font-family: Bely Display;
   font-weight: var(--fontWeightRegular);
   line-height: 16.5rem;
   z-index: 100;
@@ -76,7 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: BelyDisplayW00-Regular;
+  font-family: Bely Display;
   font-size: 3.5rem;
   margin-right: 5rem;
 }
