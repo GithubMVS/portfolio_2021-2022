@@ -45,6 +45,6 @@
 @font-face {
   font-family: 'BelyDisplayW00-Regular';
   font-style: normal;
-  font-weight: normal;
-  src: local('BelyDisplayW00-Regular'), url('/fonts/belySans.woff') format('woff');
+  font-weight: 600;
+  src: local('BelyDisplayW00-Regular'), url('../fonts/belySans.woff') format('woff'),
 }
