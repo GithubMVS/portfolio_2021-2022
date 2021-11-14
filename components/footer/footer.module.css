@@ -1,0 +1,154 @@
+.footerFull {
+  color: var(--colorWhite);
+  border-top: .1rem solid white;
+  display: grid;
+  grid-template-rows: auto 12.5rem;
+  padding: 0rem 15rem;
+}
+
+.footerTitle {
+  font-size: 4.5rem;
+  font-weight: 400;
+  padding: 10rem 0rem 12.5rem 0rem;
+}
+
+.footerTitle::before {
+  content: "";
+  position: absolute;
+  background-color: #4F3EF5;
+  height: 0.3rem;
+  width: 6.9rem;
+  margin-top: 7.5rem;
+}
+
+.socials_full {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 35%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials_title {
+  font-weight: 900;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.socials_text {
+  font-weight: 300;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.footerTitle_special {
+  font-weight: 900;
+}
+
+.getInTouch {
+  font-family: Bely Display;
+  font-size: 15rem;
+  padding: 6rem 0rem 10rem 0rem
+}
+
+.getInTouch::before {
+  content: "";
+  position: absolute;
+  background-color: #4F3EF5;
+  height: 0.5rem;
+  width: 29.5rem;
+  margin-top: 18rem;
+}
+
+.arrow_full {
+  position: absolute;
+  margin-top: -45rem;
+  margin-left: 94rem;
+}
+
+.arrow_full_text {
+  transform: rotate( -57.22deg);
+  position: absolute;
+  font-weight: 600;
+  font-size: 3rem;
+  top: 7rem;
+  right: -10rem;
+}
+
+.footerFull_down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerFull_down_text {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+@media (max-width: 1680px) {
+  .footerFull {
+    grid-template-rows: auto 11.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .arrow_full {
+    margin-left: 82rem;
+  }
+  .socials_full {
+    width: 47%;
+  }
+  .getInTouch {
+    padding: 6rem 0rem 9rem 0rem
+  }
+}
+
+@media (max-width: 1280px) {
+  .footerTitle {
+    font-size: 3.5rem;
+    padding: 7.5rem 0rem 10rem 0rem;
+  }
+  .socials_title {
+    padding-bottom: 3rem;
+  }
+  .socials_text {
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  .getInTouch {
+    font-size: 12.5rem;
+    padding: 4rem 0rem 7rem 0rem;
+  }
+  .getInTouch::before {
+    margin-top: 16rem;
+  }
+  .footerFull_down_text {
+    font-size: 2.5rem;
+  }
+  .arrow_full_text {
+    font-weight: 400;
+  }
+  .arrow_full {
+    margin-top: -38rem;
+    margin-left: 68rem;
+  }
+  .footerTitle::before {
+    margin-top: 6.5rem;
+  }
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 428px) {}
+
+@media (max-width: 414px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
