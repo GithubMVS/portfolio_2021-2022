@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 // imports of components
 import Navigation from '../components/navigation/Navigation'
 import Footer from '../components/footer/Footer'
+import Expertise from '../components/development_expertise/expertise'
 
 // images of me in header
 import pictureMe1920 from '../public/images/header/Header_image_1920.jpg'
@@ -17,7 +18,6 @@ import pictureMe1650 from '../public/images/header/Header_image_1680.jpg'
 import pictureMe1440_1280 from '../public/images/header/Header_image_1440_1280.jpg'
 import pictureMe1024 from '../public/images/header/Header_image_1024.jpg'
 import pictureMe768 from '../public/images/header/Header_image_768.jpg'
-import pictureMe428 from '../public/images/header/Header_image_414.jpg'
 import pictureMe414 from '../public/images/header/Header_image_414.jpg'
 import pictureMe375 from '../public/images/header/Header_image_375.jpg'
 import pictureMe320 from '../public/images/header/Header_image_375.jpg'
@@ -67,7 +67,7 @@ export default function Home() {
           <p>stop sidescrolling</p>
         </section>
 
-
+        <Expertise />
         <Footer />
       </main>
     </div>
