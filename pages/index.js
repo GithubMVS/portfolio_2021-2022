@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Navigation from '../components/navigation/Navigation'
 import Footer from '../components/footer/Footer'
 import Expertise from '../components/development_expertise/expertise'
+import Experience from '../components/experience/experience'
 
 // images of me in header
 import pictureMe1920 from '../public/images/header/Header_image_1920.jpg'
@@ -27,10 +28,26 @@ import arrow from '../public/images/header/scrollArrowHeader.svg'
 import arrow_small from '../public/images/header/arrow__small.svg'
 import arrow_extraSmall from '../public/images/header/arrow__extra_small.svg'
 
+// contentful imports
+import { createClient } from 'contentful'
 
-export default function Home() {
+export const getStaticProps = async () => {
 
+  const client = createClient({
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
+  })
 
+  const res = await client.getEntries({ content_type: 'work' })
+
+  return {
+    props: {
+      work: res.items
+    }
+  }
+}
+
+export default function Home({ work }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -64,12 +81,14 @@ export default function Home() {
         </header>
 
         <section className={styles.section2}>
-          <p>stop sidescrolling</p>
+          {work.map(experience => (
+            <Experience key={experience.fields.id} work={experience} />
+          ))}
         </section>
 
         <Expertise />
         <Footer />
       </main>
-    </div>
+    </div >
   )
 }
